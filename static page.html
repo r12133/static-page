@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>static page</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		#box {
+			width: 950px;
+			height: 600px;
+			margin: auto;
+			overflow: hidden;
+		}
+		#left {
+			height: 100%;
+			width: 300px;
+			margin:0;
+			float: left;
+			margin:10px 15px;
+		}
+		.list-group {
+			font-size: 12px;
+		}
+		.list-group .list-group-item {
+			padding: 8px 15px;
+		}
+		.list-group span {
+			border-radius: 3px;
+		}
+		.bgred {
+			background-color: red;
+		}
+		.bggreen {
+			background-color: green;
+		}
+		.bgyellow {
+			background-color: yellow;
+		}
+		.bgblue {
+			background-color: #337ab7;
+		}
+		.bgbluelight {
+			background-color:#5bc0de; 
+		}
+		#right {
+			height: 100%;
+			overflow: auto;
+		}
+		.breadcrumb {
+			margin-top: 10px;
+		}
+		.card {
+			display: inline-block;
+			width: 180px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: center;
+			padding: 5px;
+			margin-right: 15px;
+		}
+		.card > img {
+			width: 150px;
+			margin-bottom: 10px;
+		}
+		.card > .name {
+			font-size: 20px;
+			font-weight: bolder;
+		}
+		.card > .price {
+			color:red;
+			font-weight: bolder;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="left">
+			<div class="list-group">
+				<a href="" class="list-group-item active">电子产品</a>
+				<a href="" class="list-group-item">手机<span class="badge 
+				bgblue">123</span></a>
+				<a href="" class="list-group-item">笔记本<span class="badge bggreen">123</span></a>
+				<a href="" class="list-group-item">平板<span class="badge bgred">123</span></a>
+				<a href="" class="list-group-item">显示器<span class="badge bgbluelight">123</span></a>
+				<a href="" class="list-group-item">游戏机<span class="badge bggreen">123</span></a>
+			</div>
+			<div class="list-group">
+				<a href="" class="list-group-item active">智能数码</a>
+				<a href="" class="list-group-item">手环<span class="badge bgred">123</span></a>
+				<a href="" class="list-group-item">手表<span class="badge bggreen">123</span></a>
+				<a href="" class="list-group-item">VR眼镜<span class="badge bgbluelight">123</span></a>
+			</div>
+			<div class="list-group">
+				<a href="" class="list-group-item active">手机配件</a>
+				<a href="" class="list-group-item">耳机<span class="badge bgyellow">123</span></a>
+				<a href="" class="list-group-item">移动电源<span class="badge bggreen">123</span></a>
+				<a href="" class="list-group-item">手机壳<span class="badge bgbluelight">123</span></a>
+				<a href="" class="list-group-item">数据线<span class="badge bgblue">123</span></a>
+				<a href="" class="list-group-item">手机支架<span class="badge bgred">123</span></a>
+			</div>
+		</div>
+		<div id="right">
+			<div class="introduce">
+				<ol class="breadcrumb">
+					<li><a href="" class="small">首页</a></li>
+					<li class="active small">手机</li>
+				</ol>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>	
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>
+			</div>
+			<div class="introduce">
+				<ol class="breadcrumb">
+					<li><a href="" class="small">首页</a></li>
+					<li class="active small">手机</li>
+				</ol>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>	
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="">
+					<p class="name text-primary">OPPO</p>
+					<p class="price">1599</p>
+					<p class="info text-primary small">荣耀8 3G+32G</p>
+					<p class="info small">荣耀8 3G+32G</p>
+					<button type="button" class="btn btn-success btn-xs">立即购买</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

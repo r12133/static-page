@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#box {
+			margin:auto;
+			width: 1200px;
+			height: 600px;
+			overflow: hidden;
+		}
+		#left {
+			width:300px;
+			float: left;
+			margin-right: 20px;
+		}
+		#right {
+			overflow: auto;
+			height: 100%;
+		}
+		.menu {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			margin-bottom: 10px;
+			border-radius: 5px;
+		}
+		.menu > li {
+			padding: 6px 20px;
+			border: 1px solid #ccc;
+			border-top: 0;
+		}
+		.menu a {
+			text-decoration: none;
+		}
+		.menu span {
+			float: right;
+			padding: 0 3px;
+			color: white;
+		}
+		.menu .title {
+			background-color: blue;
+		}
+		.menu .title.green {
+			background-color: green;
+		}
+		.menu .title > a {
+			color: white;
+		}
+		.blue {
+			background-color: blue;
+		}
+		.green {
+			background-color: green;
+		}
+		.red {
+			background-color: red;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+		.head {
+			font-size: 13px;
+			background-color: #ccc;
+			color: blue;
+			margin: 0;
+			padding: 4px 9px;
+			font-weight: normal;
+			border-radius: 5px;
+		}
+		.head .child {
+			color: black;
+		}
+		.card {
+			border: 1px solid #ccc;
+			display: inline-block;
+			width: 200px;
+			padding: 5px;
+			margin:15px 15px 15px 0;
+			border-radius: 5px;
+		}
+		.card > img {
+			width: 150px;
+		}
+		.card,.card p {
+			text-align: center;
+		}
+		.card p {
+			margin: 3px 0;
+		}
+		.fblue {
+			color: blue;
+		}
+		.fred {
+			color: red;
+		}
+		.card .name {
+			font-size: 20px;
+			font-weight: bolder;
+		}
+		.card .price {
+			font-weight: bold;
+		}
+		.card .info {
+			font-size: 13px;
+		}
+		.card .buy {
+			background-color: green;
+			color: white;
+			border: none;
+			margin: 5px;
+			padding: 3px 7px;
+			border-radius: 3px;
+		}
+		.card .buy:hover {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="left">
+			<ul class="menu">
+				<li class="title"><a href="">电子产品</a></li>
+				<li><a href="">手机</a><span class="blue">234</span></li>
+				<li><a href="">笔记本</a><span class="green">34</span></li>
+				<li><a href="">平板</a><span class="red">4</span></li>
+				<li><a href="">显示器</a><span class="blue">434</span></li>
+				<li><a href="">游戏机</a><span class="green">34</span></li>
+			</ul>
+			<ul class="menu">
+				<li class="title green"><a href="">智能数码</a></li>
+				<li><a href="">手环</a><span class="red">300</span></li>
+				<li><a href="">手表</a><span class="green">340</span></li>
+				<li><a href="">VR眼镜</a><span class="blue">753</span></li>
+			</ul>
+			<ul class="menu">
+				<li class="title"><a href="">手机配件</a></li>
+				<li><a href="">耳机</a><span class="yellow">456</span></li>
+				<li><a href="">移动电源</a><span class="green">156</span></li>
+				<li><a href="">手机壳</a><span class="blue">400</span></li>
+				<li><a href="">数据线</a><span class="blue">89</span></li>
+				<li><a href="">手机支架</a><span class="red">90</span></li>
+				<li><a href="">手机贴膜</a><span class="yellow">567</span></li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="introduce">
+				<h5 class="head">首页/<span class="head child">手机</span></h5>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1599</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1598</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1599</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+			</div>
+			<div class="introduce">
+				<h5 class="head">首页/<span class="head child">笔记本</span></h5>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1599</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1599</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+				<div class="card">
+					<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+					<p class="name fblue">OPPO</p>
+					<p class="price fred">1599</p>
+					<p class="info fblue">荣耀8 3G+32G</p>
+					<p class="info">荣耀8 3G+32G</p>
+					<button class="buy">立即购买</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
